@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Sriracha&display=swap');
+
+/*
+Coisas a se fazer: 
+    -> Criar textos com tamanho adaptáveis a diferentes dispositivos; 
+    -> Sombras no efeito parallax para criar um certo efeito (opcional); 
+    
+    -> Checar o uso do text-transform e do font-variant
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh; 
+}
+
+:root {
+    --marrom: #805500; 
+    --font-destaque: 'Passion One', cursive;
+    --font-cordel: 'Sriracha', cursive;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--font-destaque);
+    min-width: 150px;
+    padding: 50px;
+}
+
+header > h1 {
+    font-size: 15vw;
+}
+
+header > p {
+    font-size: 7vw;
+}
+
+header > p > a { 
+    text-decoration: none;
+    color: white;
+}
+
+header > p > a:hover {
+    color: var(--marrom); 
+}
+
+main {
+    font-weight: italic;
+    line-height: 1.6em;
+    padding: 10px;
+    font-size: 1.6em;
+}
+
+pre {
+    white-space: pre-line;
+    font-family: var(--font-cordel);
+}
+
+section { 
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    padding-left: 30px;
+}
+
+.parallax {
+    background: white center center /cover no-repeat fixed;
+    padding: 10px;
+    box-shadow: inset 0px 0px 9px 3px rgb(0 0 0 / 84%);
+    margin: 0px -10px;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+}
+
+.parallax > pre > p {
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.445);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#pll1 {
+    background-image: url('../pacote-d012/imagens/background001.jpg');
+}
+
+#pll2 {
+    background-image: url('../pacote-d012/imagens/background002.jpg');
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--marrom);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
